@@ -179,7 +179,7 @@ For more information on version skews, see:
 {{< tabs name="k8s_install" >}}
 {{% tab name="Ubuntu, Debian or HypriotOS" %}}
 ```bash
-sudo apt-get update && sudo apt-get install -y apt-transport-https curl
+sudo apt-get update && sudo apt-get install -y apt-transport-https curl gnupg2
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
 deb https://apt.kubernetes.io/ kubernetes-xenial main
